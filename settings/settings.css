@@ -1,0 +1,27 @@
+.changeInformation input[type="text"], input[type="password"]{
+    width: 200px;
+    letter-spacing: 2px;
+}
+
+#center{
+    margin: 0 auto;
+    width: 312px;
+}
+
+.changeError{
+    border: 1px solid white;
+}
+
+#privateChanges{
+    padding: 4px;
+    width: 350px;
+    margin: 0 auto;
+    border: 1px solid #aaa;
+    font-weight: bold;
+}
+
+#show-password{
+    width: 32px;
+    height: 32px;
+    margin-left: 3px;
+}

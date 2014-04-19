@@ -1,0 +1,28 @@
+#content{    
+	width: 768px;    
+	background: gray;
+}
+
+.form{    
+	margin: 0 auto;    
+	width: 310px;    
+	padding: 20px;    
+	text-align: center;    
+	font-weight: bold;
+}
+
+#loginname, #loginpassword{    
+	width: 300px;    
+	letter-spacing: 5px;
+}
+
+#loginname:focus, #loginpassword:focus{    
+	border: 1px solid white;
+}
+
+.loginbutton{    
+	width: 202px;    
+	border: 1px solid #808080;    
+	font-size: 11px;    
+	padding: 1px;
+}

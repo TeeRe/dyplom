@@ -1,0 +1,261 @@
+@font-face {
+    font-family: Verdana;
+    src: url(fonts/Verdana-Regular.ttf);
+}
+
+@font-face {
+    font-family: Tahoma;
+    src: url(fonts/Verdana-Regular.ttf);
+}
+
+html, body{
+	width: 100%;
+	margin: 0;
+	padding: 0;	
+}
+
+html{
+	background: #ccc url(../images/gradient-background-c.jpg) no-repeat;
+	background-size: 100%; /*TODO*/
+}
+
+body{
+	font-size: 62.5%;
+	margin-top: 1%;
+}
+
+div, input, textarea, ul{
+	margin: 0;
+	padding: 0;
+}
+
+hr{
+	height: 1px;
+	background: white;
+}
+
+#content img{
+	/*width: 100%;*/
+}
+
+iframe{
+	width: 100%;
+	height: 459px;
+	border: none; //TODO: Where using iframe? O_o
+} 
+
+*:focus { outline: none; }
+input[type="text"], input[type="password"] {
+	font-size: 11px;
+    padding: .6em;
+    background: black;
+    color: white;
+    vertical-align: middle;
+    font-family: Tahoma;
+    border: 1px solid black;
+    width: 98%;
+    color: white;
+}
+input[type="text"]:focus, input[type="password"]:focus{	border: 1px solid white; }
+
+textarea{
+	/*padding: .6em;*/
+	/*resize: none;*/
+	/*border: 1px solid black;*/
+	/*background: black;*/
+	/*color: white;*/
+	height: 300px;
+	/*width: 98%;*/
+}
+
+#add-feed-text:focus{
+	border: 1px solid black;
+}
+
+#add-feed-visible{
+	width: 100%;
+}
+
+.bold{
+    font-weight: bold;
+}
+
+#page_logo{
+	background: url(../images/smile.svg) no-repeat;
+	width: 145px;
+	height: 145px;
+	position: absolute;
+}
+
+#logo{
+	background: url(../images/smile.svg) no-repeat;
+	width: 45px;
+	height: 45px;
+	background-size: 45px auto;
+	top: 13px;
+	position: absolute;
+}
+
+.big_logo{
+	background: url(../images/smile.svg) no-repeat;
+	width: 50em;
+	height: 50em;
+	background-size: 50em auto;
+	opacity: 0.3;
+	margin: 0 auto;
+}
+
+.not_smile{
+	background: url(../images/not_smile.svg) no-repeat;
+	width: 50em;
+	height: 50em;
+	background-size: 50em auto;
+	opacity: 0.3;
+	margin: 0 auto;
+}
+
+#error404, #post-in-draft{
+	text-align: center;
+}
+
+.page_up{
+    position: fixed;
+    width: 30px;
+    height: 32%;
+    background: black;
+    opacity: 0.2;
+    -moz-opacity: 0.2;
+    -khtml-opacity: 0.2;
+}
+    .page_up:hover{
+        opacity: 0.8;
+        -moz-opacity: 0.8;
+        -khtml-opacity: 0.8;
+    }
+
+    .page_center{top: 34.75%;}
+    .page_down{top: 68%;}
+
+#container{
+	margin: 0 auto;
+	width: 768px;
+}
+
+#header, #footer{
+	width: 100%;
+	background: gray;
+	margin-bottom: 10px;
+	text-align: center;
+}
+
+#header{
+	border: 1px solid white;
+}
+
+	.search_area{
+		width: 200px !important;
+		letter-spacing: 2px;
+	}
+
+#footer{
+	border: 1px solid black;
+	font-family: Verdana;
+	font-size: 11px;
+	padding: 20px 0 20px 0;
+	margin-top: 10px;
+	color: black;
+}
+
+
+
+#content{
+	height: auto;
+	width: auto;
+	text-align: justify;
+	margin-top: 10px;
+}
+
+	#content button{
+		padding: .3em;
+	}
+
+#header a, #header button{
+	background: black;
+	padding: 9.5px 8px;
+	border: none;
+	margin: .5em .25em;
+
+	border-radius: .8em;
+}
+
+	#header button{
+		width: 3.6em;
+	}
+
+#header a:hover, #header button:hover{
+    box-shadow:  0px 0px 20px 10px rgba(255, 255, 255, 0.5);
+    border: none;
+}
+
+#header li{
+	display: inline-block;
+}
+
+#header form{
+	display: inline;
+}
+
+.validateTips{
+    font-size: 62.5%; 
+    font-family: Tahoma,Arial,sans-serif;
+    font-size: 11px;
+}
+
+#all-boards a{
+	margin: 8px 0 8px 0;
+	width: 100%;
+	display: block;
+	background: black;
+	text-align: center;
+	padding: 15px 0 15px 0;
+	text-decoration: none;
+	font-weight: bold;
+
+	transition: background 2s 0s ease;
+	transition: color 1s 0s ease;
+
+	border-radius: .8em;
+}
+
+#all-boards a:hover{
+    background: #eee;
+    color: black;
+}
+
+#like, #dislike{
+	display: inline;
+}
+
+	.like-post, .dislike-post{
+		height: 24px;
+		width: auto;
+		min-width: 40px;
+		border-radius: .8em;
+		background: black;
+		border: none;
+		color: white;
+		cursor: pointer;
+	}
+
+	.like-post:hover, .dislike-post:hover{
+		box-shadow:  0px 0px 20px 10px rgba(255, 255, 255, 0.5);
+	}
+
+	.like-post:disabled, .dislike-post:disabled{
+		box-shadow:  none;
+		opacity: 0.5;
+	}
+
+.find-user-info, .find-user-receiver, .send-more, .send-reply{
+	padding: .3em;
+}

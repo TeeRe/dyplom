@@ -1,0 +1,1 @@
+$('.details-post, .author-post, .create-post, .likes').button().disableSelection();

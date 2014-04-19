@@ -1,0 +1,33 @@
+#content{    
+	width: 768px;    
+	background: gray;
+}
+
+.form{    
+	margin: 0 auto;    
+	width: 310px;    
+	padding: 20px;    
+	text-align: center;    
+	font-weight: bold;
+}
+
+.regname, .regpassword1, .regpassword2, .regmail{    
+	width: 300px;    
+	letter-spacing: 5px;
+}
+
+#regname:focus, .regpassword1:focus, .regpassword2:focus .regmail:focus{    
+	border: 1px solid white;
+}
+
+.regbutton{    
+	width: 202px;    
+	border: 1px solid #808080;    
+	font-size: 11px;    
+	padding: 1px;
+}
+
+#show-reg-passwords{
+    width: 30px;
+    height: 30px;
+}
